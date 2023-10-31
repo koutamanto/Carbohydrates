@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/admin.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbohydrates 自販機 登録画面</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col">
+                <h4 class="text-center">
+                    新規飲み物登録画面
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control my-2" placeholder="Coca-Cola-Zero" name="ID" id="ID">
+                <input type="text" class="form-control my-2" placeholder="コカ・コーラ ゼロ" name="name" id="name">
+                <input type="text" class="form-control my-2" placeholder="喉の渇きを癒すだけでなく、ココロとカラダの両方をリフレッシュし、前向きな楽しい気分へとスイッチしてくれます。" name="description" id="description">
+                <label for="sparkling" class="form-label">炭酸飲料</label>
+                <input class="form-check-input" type="checkbox" value="" aria-label="炭酸飲料であるかどうか" name="sparkling" id="sparkling">                            
+                <br>
+                <label for="cold" class="form-label">冷たい飲み物</label>
+                <input class="form-check-input" type="checkbox" value="" aria-label="冷たい飲み物" name="cold" id="cold">
+                <br>
+                <label for="hot" class="form-label">温かい飲み物</label>
+                <input class="form-check-input" type="checkbox" value="" aria-label="炭酸飲料であるかどうか" name="hot" id="hot">
+                <input type="number" class="form-control my-2" placeholder="173" name="price" id="price">
+                <input type="text" class="form-control my-2" placeholder="500ml" name="volume" id="volume">
+                <input type="url" class="form-control my-2" placeholder="https://amzn.asia/d/7qRAwCi" name="link" id="link">
+                <button class="btn btn-primary" onclick="addProduct()">
+                    追加
+                </button>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col">
+                <label for="resultJSON" class="form-label">
+                    生成されたJSON文字列はproducts.jsonに追記してください。
+                </label>
+                <textarea name="resultJSON" id="resultJSON" cols="30" rows="10"></textarea>
+            </div>
+        </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

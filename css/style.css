@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+div.main-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: auto;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.main-wrapper main {
+    margin: auto;
+    border-radius: 30px;
+    width: 60%;
+    aspect-ratio: 1 / 1.4;
+    background-color: red;
+}
+
+div.main-wrapper main div.header {
+    width: 80%;
+    height: 80px;
+    margin: 20px auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px black inset;
+}
+
+div.main-wrapper main div.header div.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    transform: translateY(-15%);
+    color: white;
+    text-shadow: 3px 5px 3px black;
+}
+
+div.main-wrapper main div.show-case {
+    width: 90%;
+    height: 40%;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.main-wrapper main div.show-case div.row {
+    width: 100%;
+    height: 32%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.main-wrapper main div.show-case div.row div.col {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div.main-wrapper main div.show-case div.row div.col div.image-box {
+    width: 100%;
+    flex: 1;
+}
+
+div.main-wrapper main div.show-case div.row div.col div.btn-box {
+    width: 100%;
+    height: 15%;
+    background-color: rgb(220, 220, 220);
+}
