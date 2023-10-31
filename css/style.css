@@ -6,6 +6,7 @@ body {
     padding: 0px;
     width: 100%;
     height: 100%;
+    background-color: rgb(60, 60, 60);
 }
 
 div.main-wrapper {
@@ -21,7 +22,7 @@ div.main-wrapper {
 div.main-wrapper main {
     margin: auto;
     border-radius: 30px;
-    width: 60%;
+    width: 100%;
     aspect-ratio: 1 / 1.4;
     background-color: red;
 }
@@ -76,4 +77,15 @@ div.main-wrapper main div.show-case div.row div.col div.btn-box {
     width: 100%;
     height: 15%;
     background-color: rgb(220, 220, 220);
+}
+
+div.main-wrapper main div.show-case div.row div.col div.btn-box input {
+    width: 50px;
+    height: 30px;
+    background-image: url("../assets/button.svg");
+    background-size: cover;
+}
+
+div.main-wrapper main div.show-case div.row div.col div.btn-box input:active {
+
 }

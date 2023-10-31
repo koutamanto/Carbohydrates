@@ -12,7 +12,7 @@ function addProduct() {
     }
     // document.getElementById("resultJSON").innerText = JSON.stringify(product);
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://192.168.0.228/addProduct");
+    xhr.open("POST", "http://192.168.0.141/addProduct");
     xhr.responseType = "json";
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = (event) => {
