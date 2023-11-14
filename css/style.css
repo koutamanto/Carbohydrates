@@ -24,7 +24,10 @@ div.main-wrapper main {
     border-radius: 30px;
     width: 100%;
     aspect-ratio: 1 / 1.4;
-    background-color: red;
+    background: linear-gradient(150deg, rgb(210, 5, 5),red,red, rgb(200, 0, 0), red,red, rgb(230, 10, 10),red);
+    box-shadow: 
+        inset 5px 5px 5px rgb(255, 134, 134),
+        inset -5px -5px 5px rgb(60, 60, 60);
 }
 
 div.main-wrapper main div.header {
@@ -79,21 +82,25 @@ div.main-wrapper main div.show-case div.row div.col div.btn-box {
     height: 15%;
     background-color: rgb(220, 220, 220);
     display: flex;
+    box-shadow: inset 0px 2px 0px gray;
 }
 
-div.main-wrapper main div.show-case div.row div.col div.btn-box input {
-    width: 30%;
-    height: 60%;
+div.main-wrapper main div.show-case div.row div.col div.btn-box button {
+    width: 60%;
     margin: auto;
+    aspect-ratio: 2;
     padding-top: 5px;
     padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: url("../assets/button.svg");
+    border-style: none;
     outline: none;
     background-size: cover;
+
 }
 
-div.main-wrapper main div.show-case div.row div.col div.btn-box input:active {
-
+div.main-wrapper main div.show-case div.row div.col div.btn-box button:active {
+    background-image: url("../assets/button_push.svg");
 }
 
 div.main-wrapper main div.show-case div.row div.col div.image-box img.product-image {
