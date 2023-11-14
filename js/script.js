@@ -9,7 +9,7 @@ window.onload = function() {
             var linkTo = productInfos.list[i].link;
             document.getElementsByClassName("product-image")[i].src = productInfos.list[i].image;
             document.getElementsByClassName("buy-btn")[i].addEventListener("click", function () {
-                location = linkTo;
+                open(linkTo);
             });
         }
     };

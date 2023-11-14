@@ -55,6 +55,7 @@ div.main-wrapper main div.show-case {
     background-color: white;
     display: flex;
     flex-direction: column;
+    box-shadow: inset 2px 2px 3px gray;
 }
 
 div.main-wrapper main div.show-case div.row {
@@ -117,4 +118,8 @@ div.main-wrapper main div.show-case div.row div.col div.image-box img.product-im
     div.main-wrapper main div.show-case div.row div.col div.btn-box {
         height: 10vw;
     }
+}
+
+div.main-wrapper main div.outlet {
+    background-color: wheat;
 }
