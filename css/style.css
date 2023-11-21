@@ -110,6 +110,87 @@ div.main-wrapper main div.show-case div.row div.col div.image-box img.product-im
     width: auto;
 }
 
+div.main-wrapper main div.outlet {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    padding: auto;
+    margin: auto;
+}
+
+div.main-wrapper main div.outlet .hole {
+    margin: auto;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(
+        120deg,
+        black,
+        black,
+        black,
+        black,
+        black,
+        rgb(74, 74, 74),
+        black,
+        rgb(50, 50, 50),
+        black,
+        black,
+        rgb(60, 60, 60),
+        black
+    );
+    border-radius: 20px;
+    box-shadow: 3px 4px 3px gray inset;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    padding: auto;
+}
+
+div.main-wrapper main div.outlet .hole .recycl-caut {
+    color: wheat;
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+div.main-wrapper main div.outlet .hole .note-box {
+    color: white;
+    width: 50%;
+    padding: 10% 5%;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+div.main-wrapper main div.outlet .hole .note-box .note-title {
+    font-size: clamp(0.75rem, 0.295rem + 2.27vw, 2rem);
+}
+
+div.main-wrapper main div.outlet .hole .note-box .note-content {
+    font-size: clamp(0.5rem, 0.273rem + 1.14vw, 1.125rem);
+}
+
+div.main-wrapper main div.outlet .hole .mark-box {
+    width: 50%;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.main-wrapper main div.outlet .hole .mark-box img {
+    width: 70%;
+    aspect-ratio: 1;
+    margin: 10% auto;
+    color: white;
+}
+
 @media screen and (max-width:480px) {
     div.main-wrapper main div.show-case div.row div.col div.btn-box input {
         width: 60%;
@@ -118,8 +199,4 @@ div.main-wrapper main div.show-case div.row div.col div.image-box img.product-im
     div.main-wrapper main div.show-case div.row div.col div.btn-box {
         height: 10vw;
     }
-}
-
-div.main-wrapper main div.outlet {
-    background-color: wheat;
 }

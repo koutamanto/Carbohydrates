@@ -1,17 +1,20 @@
-window.onload = function() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/products.json');
-    xhr.onload = (event) => {
-        var productInfos = JSON.parse(xhr.responseText);
-        console.log(productInfos)
-        for(var i=0;i<productInfos.list.length;i++) {
-            console.log(productInfos.list[i].image);
-            var linkTo = productInfos.list[i].link;
-            document.getElementsByClassName("product-image")[i].src = productInfos.list[i].image;
-            document.getElementsByClassName("buy-btn")[i].addEventListener("click", function () {
-                open(linkTo);
-            });
-        }
-    };
-    xhr.send();
+document.getElementById('buy-btn').addEventListener('', () => {
+    var a = document.documentElement;
+    var y = a.scrollHeight - a.clientHeight;
+    window.scroll(0, y);
+  });
+
+
+function buyAnimation(imageUrl, link) {
+    console.log("buy !!")
+    // scroll
+    
+    // 上からドリンク
+    
+    // 画面遷移
 }
+
+
+
+
+  //https://developer.mozilla.org/ja/docs/Web/API/Window/scroll
