@@ -1,17 +1,13 @@
-document.getElementById('buy-btn').addEventListener('', () => {
-    var a = document.documentElement;
-    var y = a.scrollHeight - a.clientHeight;
-    window.scroll(0, y);
-  });
-
-
 function buyAnimation(imageUrl, link) {
     console.log("buy !!")
     // scroll
-    
+    window.scroll(x-coord,y-coord)
+    var headerHeight = $('header').outerHeight();
+
     // 上からドリンク
     
     // 画面遷移
+
 }
 
 
