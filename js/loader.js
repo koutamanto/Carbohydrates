@@ -1,3 +1,5 @@
+// do not edit
+
 window.onload = function() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '/products.json');
@@ -5,11 +7,13 @@ window.onload = function() {
         var productInfos = JSON.parse(xhr.responseText);
         console.log(productInfos)
         for(var i=0;i<productInfos.list.length;i++) {
-            let image = productInfos.list[i].image;
+            let id = productInfos.list[i].id;
+            let displayImage = "img/displayed/" + productInfos.list[i].image;
+            let detailsImage = "img/details/" + productInfos.list[i].image;
             let link = productInfos.list[i].link;
-            document.getElementsByClassName("product-image")[i].src = productInfos.list[i].image;
+            document.getElementsByClassName("product-image")[i].src = displayImage;
             document.getElementsByClassName("buy-btn")[i].addEventListener("click", function () {
-                buyAnimation(image, link);
+                buyAnimation(id, detailsImage, link);
             });
         }
     };

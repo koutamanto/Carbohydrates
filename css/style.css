@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     margin: 0px;
@@ -105,7 +109,7 @@ div.main-wrapper main div.show-case div.row div.col div.btn-box button:active {
 }
 
 div.main-wrapper main div.show-case div.row div.col div.image-box img.product-image {
-    height: 15vw;
+    height: 15vw;    
     margin: auto;
     width: auto;
 }
@@ -119,6 +123,15 @@ div.main-wrapper main div.outlet {
     vertical-align: middle;
     padding: auto;
     margin: auto;
+    position: relative;
+}
+
+div.main-wrapper main div.outlet #anim-drink {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(50deg);
+    height: 60%;
 }
 
 div.main-wrapper main div.outlet .hole {

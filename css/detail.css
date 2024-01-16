@@ -11,6 +11,7 @@ body {
 
 div.img-box {
     width: 50%;
+    height: 100vh;
     color: aqua;
     display: flex;
     text-align: center;
@@ -22,15 +23,84 @@ div.img-card {
     width: calc(100% - 100px);
     height: calc(100% - 100px);
     margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 10px 10px 10px rgba(100, 100, 100, 0.1);
+}
+
+div.img-card img {
+    margin: 50px auto;
+    height: calc(100% - 100px);
 }
 
 main {
     width: 50%;
 }
 
-@media screen and (max-width: 768px) {
+.desc {
+    color: white;
+    font-size: clamp(1.25rem, 1.019rem + 0.48vw, 1.5rem);
+    padding: 20px;
+}
 
+div[class*="prop"] {
+    margin: 15px;
+}
+
+div[class*="prop"] .text {
+    margin-bottom: 5px;
+}
+
+.bar {
+    height: 30px;
+    border-radius: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bar .content {
+    position: relative;
+    left: 0px;
+    margin-right: auto;
+    width: 30px;
+    min-width: 30px;
+    height: 100%;
+    transition: 1s;
+    border-radius: 15px;
+    /* background-color: rgba(50, 150, 200, 0.9); */
+}
+
+.prop-energy .bar .content {
+    background-color: rgb(230, 150, 20, 0.9);
+}
+
+.prop-lipid .bar .content {
+    background-color: rgb(250, 100, 0, 0.9);
+}
+
+.prop-solt .bar .content {
+    background-color: rgb(50, 150, 200, 0.9);
+}
+
+.prop-protein .bar .content {
+    background-color: rgb(70, 230, 50, 0.9);
+}
+
+.prop-carbohydrates .bar .content {
+    background-color: rgb(250, 50, 20, 0.9);
+}
+
+.prop-sugars .bar .content {
+    background-color: rgb(230, 150, 180, 0.9);
+}
+
+.prop-vitamin .bar .content {
+    background-color: rgb(230, 250, 50, 0.9);
+}
+
+.prop-name {
+    color: rgb(50, 150, 200);
+    font-size: clamp(1.5rem, 0.462rem + 2.16vw, 2.625rem);
 }
